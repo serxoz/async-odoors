@@ -1,5 +1,5 @@
-use rand::{Rng, thread_rng};
-use serde::{Serialize, Deserialize};
+use rand::{thread_rng, Rng};
+use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Debug)]
 pub struct RequestParams<T> {

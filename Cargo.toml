@@ -11,10 +11,15 @@ exclude = [
     ".github",
 ]
 
+[[bin]]
+path = "examples/odoo.rs"
+name = "odoors"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-reqwest = { version = "0.11", features = ["blocking", "json"] }
+# reqwest = { version = "0.11", features = ["blocking", "json"] }
+reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1.0.132", features = ["derive"] }
 serde_json = { version = "1.0.73" }
