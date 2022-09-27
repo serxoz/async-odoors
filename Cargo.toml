@@ -1,10 +1,10 @@
 [package]
-name = "odoors"
-authors = ["Valerian DORCY <valerian.dorcy@gmail.com>"]
-description = "Odoo library"
-repository = "https://github.com/dorcyv/odoors"
+name = "async-odoors"
+authors = ["Valerian DORCY <valerian.dorcy@gmail.com>", "serxoz <serxoz@protonmail.ch>"]
+description = "Odoo async library"
+repository = "https://github.com/serxoz/async-odoors"
 license = "MIT"
-version = "0.3.0"
+version = "1.0.0"
 edition = "2021"
 exclude = [
     "http/*",
@@ -16,9 +16,7 @@ path = "examples/odoo.rs"
 name = "odoors"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-# reqwest = { version = "0.11", features = ["blocking", "json"] }
 reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1.0.132", features = ["derive"] }
