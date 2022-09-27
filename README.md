@@ -1,3 +1,6 @@
-# odoors
+# async-odoors
 
-A simple Odoo rust library.
+Conversion to async of the Valerian DORCY odoors library.
+
+Take a look at the examples directory! :D
+
