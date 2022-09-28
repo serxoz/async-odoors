@@ -1,5 +1,5 @@
 [package]
-name = "async-odoors"
+name = "async_odoors"
 authors = ["Valerian DORCY <valerian.dorcy@gmail.com>", "serxoz <serxoz@protonmail.ch>"]
 description = "Odoo JSON-RPC client async library"
 homepage = "https://github.com/serxoz/async-odoors"

@@ -1,6 +1,6 @@
 use serde::Deserialize;
 
-use odoors::odoo::{deserialize_odoo_nullable, Odoo};
+use async_odoors::odoo::{deserialize_odoo_nullable, Odoo};
 
 #[derive(Deserialize, Debug)]
 struct ProductTemplate {
@@ -24,7 +24,7 @@ async fn get_odoo() -> Odoo {
 
 #[tokio::main]
 async fn main() {
-    let odoo = get_odoo().await;
+    let odoo: Odoo = get_odoo().await;
 
     let product_template: Vec<ProductTemplate> = odoo
         .search_read(
