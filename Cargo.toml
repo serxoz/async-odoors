@@ -1,8 +1,12 @@
 [package]
 name = "async-odoors"
 authors = ["Valerian DORCY <valerian.dorcy@gmail.com>", "serxoz <serxoz@protonmail.ch>"]
-description = "Odoo async library"
+description = "Odoo JSON-RPC client async library"
+homepage = "https://github.com/serxoz/async-odoors"
+documentation = "https://github.com/serxoz/async-odoors"
 repository = "https://github.com/serxoz/async-odoors"
+keywords = ["odoo", "json-rpc", "async", "tokio"]
+readme = "README.md"
 license = "MIT"
 version = "1.0.0"
 edition = "2021"
@@ -17,9 +21,10 @@ name = "odoors"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-reqwest = { version = "0.11", features = ["json"] }
-tokio = { version = "1", features = ["full"] }
-serde = { version = "1.0.132", features = ["derive"] }
-serde_json = { version = "1.0.73" }
-serde_with = "1.12.1"
-rand = "0.8.4"
+reqwest = { version = "0.11.12", features = ["json"] }
+tokio = { version = "1.21.2", features = ["full"] }
+serde = { version = "1.0.145", features = ["derive"] }
+serde_json = { version = "1.0.85" }
+# serde_with = "1.12.1"
+serde_with = "2.0.1"
+rand = "0.8.5"
